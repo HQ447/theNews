@@ -10,6 +10,7 @@ import Login from './pages/auth/login'
 import Signup from './pages/auth/signup'
 import DashboardLayout from './pages/admin-panel/DashboardLayout'
 import Analytics from './pages/admin-panel/Analytics'
+import DetailedPage from './pages/landing-pages/DetailedPage'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/sports" element={<Sports />} />
           <Route path="/pakistan" element={<Pakistan />} />
           <Route path="/world" element={<World />} />
+          <Route path='/news/:id' element={<DetailedPage />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

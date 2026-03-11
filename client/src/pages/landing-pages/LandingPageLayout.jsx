@@ -8,7 +8,7 @@ function LandingPageLayout() {
     return (
         <div>
             <Nav />
-            <div className='px-20'>
+            <div className='px-40 '>
                 <div className="advertisment flex justify-center items-center w-full py-10">
                     <a href="#"><img src={ad} alt="" /></a>
                 </div>
