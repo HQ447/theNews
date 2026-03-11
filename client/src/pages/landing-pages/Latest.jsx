@@ -16,7 +16,7 @@ function Latest() {
                             <p className="text-gray-600 mb-2 line-clamp-3">{item.description}</p>
                             <span className="text-sm text-gray-400">{item.date}</span>
                         </div>
-                        <button onClick={() => navigate(`/news/${item.id}`)} className='font-urdu px-2 py-1 bg-amber-500 text-white hover:bg-amber-600 hover:scale-95 transition-all cursor-pointer'>مزید پڑھیں</button>
+                        <button onClick={() => navigate(`/news/${item.id}`)} className='font-urdu animate-pulse px-2 py-1 bg-amber-500 text-white hover:bg-amber-600 hover:scale-95 transition-all cursor-pointer'>مزید پڑھیں</button>
                     </div>
                 ))}
             </div>
