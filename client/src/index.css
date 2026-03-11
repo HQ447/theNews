@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Normal Nastaleeq */
+@font-face {
+  font-family: "JameelNoori";
+  src: url("./assets/fonts/JameelNooriNastaleeq.ttf") format("truetype");
+}
+
+/* Kasheeda Nastaleeq */
+@font-face {
+  font-family: "JameelNooriKasheeda";
+  src: url("./assets/fonts/JameelNooriNastaleeqKasheeda.ttf") format("truetype");
+}
+
+@theme {
+  --font-urdu: "JameelNoori", serif;
+  --font-urdu-kasheeda: "JameelNooriKasheeda", serif;
+}
