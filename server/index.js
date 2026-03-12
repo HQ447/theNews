@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connect_DB from "./config/db.js"
+import newsRoutes from "./routes/news.routes.js"
 
 dotenv.config();
 
@@ -13,6 +14,8 @@ app.use(cors());
 app.use(express.json());
 
 connect_DB(db_url)
+
+app.use("/api/news" , newsRoutes)
 
 app.get("/", (req, res) => {
     console.log("testing");
